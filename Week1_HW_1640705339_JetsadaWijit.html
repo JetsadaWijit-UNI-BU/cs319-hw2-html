@@ -119,11 +119,11 @@
 				<fieldset>
 					<legend>ฟอร์มสำหรับติดต่อ</legend>
 					<label for="username">ชื่อผู้ติดต่อ</label><br>
-					<input type="text" id="username" name="username" required><br>
+					<input type="text" id="username" name="username" placeholder="My Name" required><br>
 					<label for="useremail">อีเมล</label><br>
-					<input type="email" id="useremail" name="useremail" required><br>
+					<input type="email" id="useremail" name="useremail" placeholder="your@example.com" required><br>
 					<label for="topic">หัวข้อติดต่อ</label><br>
-					<select name="topic" id="topic">
+					<select name="topic" id="topic" required>
 						<optgroup label="หัวข้อติดต่อ">
 							<option value="general">เรื่องทั่วไป</option>
 							<option value="cs319_project">เกี่ยวกับโปรเจค cs319</option>
@@ -131,7 +131,7 @@
 						</optgroup>
 					</select><br>
 					<label for="more_context">ข้อความเพิ่มเติม</label><br>
-					<textarea name="more_context" id="more_context"></textarea><br>
+					<textarea name="more_context" id="more_context" placeholder="ข้อมูลเพิ่มเติม" required></textarea><br>
 					<button>ส่งข้อมูล</button> <button type="reset">ล้างข้อมูล</button>
 				</fieldset>
 			</form>
