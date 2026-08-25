@@ -101,4 +101,27 @@
   </ul>
   <hr>
 
+  <h6 id="contact">Contact</h6>
+  <p>ติดต่อผมได้ทางนี้ โดยการกรอกฟอร์มครับ</p>
+  <form action="https://postman-echo.com/post" method="POST">
+	<fieldset>
+		<legend>ฟอร์มสำหรับติดต่อ</legend>
+		<label for="username">ชื่อผู้ติดต่อ</label><br>
+		<input type="text" id="username" name="username"><br>
+		<label for="useremail">อีเมล</label><br>
+		<input type="text" id="useremail" name="useremail"><br>
+		<label for="topic">หัวข้อติดต่อ</label><br>
+		<select name="topic" id="topic">
+			<optgroup label="หัวข้อติดต่อ">
+				<option value="general">เรื่องทั่วไป</option>
+				<option value="cs319_project">เกี่ยวกับโปรเจค cs319</option>
+				<option value="works">เสนองาน</option>
+			</optgroup>
+		</select><br>
+		<label for="more_context">ข้อความเพิ่มเติม</label><br>
+		<textarea name="more_context" id="more_context"></textarea><br>
+		<button>Send data</button>
+	</fieldset>
+  </form>
+
 </html>
